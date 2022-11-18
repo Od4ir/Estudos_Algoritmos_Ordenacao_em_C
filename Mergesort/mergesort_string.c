@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#define MAX 10 //Define o número máximo de caracteres das strings;
 
 typedef struct {
     char letras[10];
@@ -108,7 +109,6 @@ int main() {
     printf("\n");
   }
 
-  
   free(v);
   return 0;
 }
