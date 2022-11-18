@@ -22,7 +22,7 @@ int compara_elemento(elemento elem1, elemento elem2) {
         return 1;
       }
       else if(elem1.letras[i] > elem2.letras[i]) {
-        return -1;
+        return 0;
       }
       i++;
   }

@@ -22,7 +22,7 @@ int compara_elemento(elemento elem1, elemento elem2) {
         return 1;
       }
       else if(elem1.letras[i] > elem2.letras[i]) {
-        return -1;
+        return 0;
       }
       i++;
   }
@@ -38,7 +38,7 @@ int particiona (elemento *v, int ini, int fim) {
   i = ini;
 
   for(j = ini; j < fim; j++) {
-    if(compara_elemento(v[j], pivo) == 1) {
+    if(compara_elemento(v[j], pivo)) {
         troca(v, i, j);
         i++;
     }

@@ -20,7 +20,7 @@ int compara_elemento(elemento elem1, elemento elem2) {
       }
       else if(elem1.letras[i] > elem2.letras[i]) {
         // Se elem1 > elem2:
-        return -1;
+        return 0;
       }
       i++;
   }
@@ -50,7 +50,7 @@ void  intercala (int p, int q, int r, elemento *v)  {
   i = 0, j = 0;
   k = p;
   while (i < n1 && j < n2) {                
-    if (compara_elemento(A[i], B[j]) == 1)   //A[i] <= B[j])
+    if (compara_elemento(A[i], B[j]))   //A[i] <= B[j])
       v[k] = A[i++];  
     else
       v[k] = B[j++];
