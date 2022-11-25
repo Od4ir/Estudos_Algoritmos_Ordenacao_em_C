@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #define MAX 10 //Define o número máximo de caracteres das strings;
 
 typedef struct {
@@ -50,7 +51,7 @@ void  intercala (int p, int q, int r, elemento *v)  {
   i = 0, j = 0;
   k = p;
   while (i < n1 && j < n2) {                
-    if (compara_elemento(A[i], B[j]))   //A[i] <= B[j])
+    if(compara_elemento(A[i], B[j]))   //A[i] <= B[j])
       v[k] = A[i++];  
     else
       v[k] = B[j++];
