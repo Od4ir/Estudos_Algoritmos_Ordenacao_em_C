@@ -36,8 +36,9 @@ void insertionSort (elemento *A, int n) {
   /* começamos de A[i], porque obviamente o vetor em A[0..0] está 
      trivialmente ordenado */
      
-  for (i = 1; i < n; i++) {
-    chave = A[i];
+  //for (i = 1; i < n; i++) {
+    //chave = A[i];
+    chave = A[n];
     j = i - 1;
 
     /* encontra a posicao correta de chave (A[i])
@@ -47,7 +48,6 @@ void insertionSort (elemento *A, int n) {
       j = j - 1;
     }
     A[j + 1] = chave;
-  }
 }
 
 int main() {
